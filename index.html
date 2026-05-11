@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Home Page</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="logo">My Courses</div>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Course Home Page</h1>
+    <p>Track your courses, credits, and progress</p>
+  </section>
+
+  <section class="filters">
+    <button onclick="filterCourses('all')">All</button>
+    <button onclick="filterCourses('completed')">Completed</button>
+    <button onclick="filterCourses('incomplete')">Incomplete</button>
+  </section>
+
+  <section class="summary">
+    <h3>Total Credits: <span id="credits">0</span></h3>
+  </section>
+
+  <section id="courseContainer" class="grid"></section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

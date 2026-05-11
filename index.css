@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid yellow;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  background: none;
+  color: white;
+  border: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px;
+  background: #f4f4f4;
+}
+
+.filters {
+  text-align: center;
+  margin: 20px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.completed {
+  border-left: 5px solid green;
+}
+
+.incomplete {
+  border-left: 5px solid red;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #333;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
