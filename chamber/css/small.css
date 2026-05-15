@@ -1,0 +1,113 @@
+:root {
+    --primary: #003366;
+    --accent: #ff9800;
+    --bg: #f4f4f4;
+    --text: #222;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 60px;
+}
+
+#menuBtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem 0;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+/* BUTTONS */
+.view-buttons {
+    margin: 1rem;
+}
+
+button {
+    padding: .5rem 1rem;
+    background: var(--accent);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* GRID / LIST */
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* IMPORTANT RUBRIC FIX */
+.list-view .card img {
+    display: none;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    loading: lazy;
+}
+
+/* FOOTER */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
