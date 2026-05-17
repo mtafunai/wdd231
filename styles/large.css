@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+
+.nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}

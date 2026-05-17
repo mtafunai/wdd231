@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WDD231 Course Dashboard</title>
-  <meta name="description" content="Interactive course dashboard for WDD231">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="styles.css"/>
+  <title>WDD231 Course Dashboard</title>
+
+  <meta name="description" content="Interactive WDD231 course dashboard showing course progress, credits earned, and completion status for Web and Software Development students.">
+  <meta name="author" content="Michael Tafunai">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+
+  <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -14,12 +27,13 @@
 <header class="header">
   <div class="logo">WDD231 Dashboard</div>
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
 
   <nav id="nav" class="nav">
     <a href="#" class="active">Home</a>
     <a href="#">Courses</a>
     <a href="#">About</a>
+    <a href="#">Contact</a>
   </nav>
 </header>
 
@@ -27,14 +41,17 @@
 
   <section class="hero">
     <h1>Course Dashboard</h1>
+    <h2>Overview</h2>
     <p>Track your progress, credits, and completed courses</p>
   </section>
 
   <section class="controls">
+    <h2>Filters</h2>
+
     <div class="filters">
-      <button onclick="filterCourses('all')">All</button>
-      <button onclick="filterCourses('completed')">Completed</button>
-      <button onclick="filterCourses('incomplete')">Incomplete</button>
+      <button data-filter="all">All</button>
+      <button data-filter="completed">Completed</button>
+      <button data-filter="incomplete">Incomplete</button>
     </div>
 
     <div class="summary">
@@ -43,15 +60,17 @@
     </div>
   </section>
 
-  <section id="courseContainer" class="grid"></section>
+  <section>
+    <h2>Courses</h2>
+    <div id="courseContainer" class="grid"></div>
+  </section>
 
 </main>
 
 <footer class="footer">
-  <p>© <span id="year"></span> WDD231</p>
-  <p>Last Modified: <span id="modified"></span></p>
+  <p>© <span id="year"></span> Michael Tafunai | Fiji</p>
+  <p id="modified"></p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
