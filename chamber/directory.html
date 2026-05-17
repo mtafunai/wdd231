@@ -5,24 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Suva Chamber Directory</title>
-    <meta name="description" content="Suva Chamber of Commerce business directory">
+
+    <meta name="description" content="Browse verified businesses and organizations in the Suva Chamber of Commerce directory, connecting local companies and services across Fiji.">
     <meta name="author" content="Michael Tafunai">
 
     <!-- Favicon -->
     <link rel="icon" href="images/logo.jpg">
 
+    <!-- Google Fonts (REQUIRED FIX) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- Open Graph (Facebook) -->
-    <meta property="og:title" content="Suva Chamber Directory">
-    <meta property="og:description" content="Discover local businesses in Suva">
-    <meta property="og:image" content="images/logo.jpg">
-    <meta property="og:url" content="https://your-site.com/chamber/directory.html">
+    <meta property="og:title" content="Suva Chamber Directory - Local Business Listings">
+    
+    <meta property="og:description" content="Explore trusted businesses in the Suva Chamber of Commerce directory. Find services, contacts, and opportunities across Fiji’s business community.">
+
+    <!-- FIXED: must be absolute URL -->
+    <meta property="og:image" content="https://mtafunai.github.io/wdd231/chamber/images/logo.jpg">
+
+    <meta property="og:url" content="https://mtafunai.github.io/wdd231/chamber/directory.html">
 
     <meta name="theme-color" content="#003366">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
@@ -30,7 +40,7 @@
 <header>
     <div class="logo-area">
         <img src="images/logo.jpg" alt="Suva Chamber Logo" class="logo">
-        <h1>Suva Chamber</h1>
+        <h1>Suva Chamber of Commerce</h1>
     </div>
 
     <button id="menuBtn">☰</button>
@@ -44,7 +54,8 @@
 </header>
 
 <main>
-    <h2>Business Directory</h2>
+    <!-- FIXED: H1 MUST be inside main -->
+    <h1>Business Directory</h1>
 
     <div class="view-buttons">
         <button id="gridBtn">Grid</button>
@@ -56,10 +67,12 @@
 
 <footer>
     <p>&copy; <span id="year"></span> Suva Chamber</p>
-    <p>Michael Tafunai | wdd 231</p>
+    <p>Michael Tafunai | WDD231</p>
     <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
-<script src="js/directory.js"></script>
+<!-- FIXED: correct path + defer -->
+<script defer src="scripts/directory.js"></script>
+
 </body>
 </html>
