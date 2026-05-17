@@ -4,15 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridBtn = document.querySelector("#gridBtn");
     const listBtn = document.querySelector("#listBtn");
 
-    /* =========================
-       FOOTER (REQUIRED)
-    ========================= */
     document.querySelector("#year").textContent = new Date().getFullYear();
     document.querySelector("#lastModified").textContent = document.lastModified;
 
-    /* =========================
-       MOBILE MENU TOGGLE
-    ========================= */
+    
     const menuBtn = document.querySelector("#menuBtn");
     const navMenu = document.querySelector("#navMenu");
 
@@ -20,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.toggle("open");
     });
 
-    /* =========================
-       LOAD JSON MEMBERS
-    ========================= */
+
     async function loadMembers() {
         try {
             const response = await fetch("data/members.json");
@@ -53,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /* =========================
-       GRID / LIST TOGGLE
-    ========================= */
+
     gridBtn.addEventListener("click", () => {
         membersContainer.classList.add("grid-view");
         membersContainer.classList.remove("list-view");
@@ -66,6 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
         membersContainer.classList.remove("grid-view");
     });
 
-    /* RUN ON LOAD */
+
     loadMembers();
 });
