@@ -1,31 +1,17 @@
 @media (min-width: 768px) {
 
-    /* Hide hamburger menu */
     #menuBtn {
         display: none;
     }
 
-    /* FIX: ensure nav always visible on desktop */
     nav {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
         width: auto;
-        margin-top: 0;
+        gap: 1rem;
     }
 
-    nav a {
-        padding: 0.5rem 1rem;
-    }
-
-    /* GRID: 3-column layout */
     .grid-view {
         grid-template-columns: repeat(3, 1fr);
-        padding: 1rem;
-    }
-
-    /* OPTIONAL BUT SAFE: improves spacing consistency */
-    .card {
-        min-height: 100%;
     }
 }

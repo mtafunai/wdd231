@@ -7,18 +7,17 @@
 
 body {
     margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background: var(--bg);
     color: var(--text);
 }
 
-/* HEADER */
+
 header {
     background: var(--primary);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
 
-    /* FIX: ensures rubric passes flex requirement clearly */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,24 +32,13 @@ header {
 
 .logo {
     width: 60px;
-    height: auto;
-    object-fit: contain;
 }
 
-#menuBtn {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
 
-/* NAV */
 nav {
     display: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 1rem;
 }
 
 nav.open {
@@ -59,32 +47,26 @@ nav.open {
 
 nav a {
     color: white;
+    padding: 0.5rem;
     text-decoration: none;
-    padding: .5rem 0;
 }
 
-.active {
-    border-bottom: 2px solid white;
-}
 
-/* BUTTONS */
 .view-buttons {
-    margin: 1rem;
     display: flex;
     gap: 1rem;
+    margin: 1rem;
 }
 
-/* FIXED BUTTON STYLE */
 button {
-    padding: .5rem 1rem;
     background: var(--accent);
     border: none;
+    padding: 0.5rem 1rem;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-/* GRID VIEW (default) */
+
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -92,7 +74,7 @@ button {
     padding: 1rem;
 }
 
-/* LIST VIEW */
+
 .list-view {
     display: flex;
     flex-direction: column;
@@ -100,53 +82,28 @@ button {
     padding: 1rem;
 }
 
-/* CARD */
+.list-view .card {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.list-view img {
+    display: none;
+}
+
+
 .card {
     background: white;
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.card img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 8px;
-}
 
-/* HIDE IMAGE IN LIST VIEW */
-.list-view .card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    text-align: left;
-}
-
-.list-view .card img {
-    display: none;
-}
-
-/* FOOTER */
 footer {
     background: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* RESPONSIVE (IMPORTANT FOR RUBRIC) */
-@media (min-width: 768px) {
-    .grid-view {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        width: auto;
-        margin-top: 0;
-    }
 }
