@@ -44,7 +44,7 @@ nav a.active {
 
 
 .hero {
-    position: relative;
+    position: absolute;
 }
 
 .hero img {
@@ -52,7 +52,7 @@ nav a.active {
 }
 
 .hero-text {
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
