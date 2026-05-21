@@ -1,17 +1,16 @@
 @media (min-width: 768px) {
 
-    #menuBtn {
-        display: none;
-    }
-
     nav {
         display: flex;
         flex-direction: row;
-        width: auto;
         gap: 1rem;
     }
 
-    .grid-view {
+    #spotlightContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #forecast {
         grid-template-columns: repeat(3, 1fr);
     }
 }
