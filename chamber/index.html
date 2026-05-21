@@ -4,88 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Suva Chamber Home</title>
+    <title>Suva Chamber of Commerce</title>
 
-    <meta name="description" content="Welcome to the Suva Chamber of Commerce">
+    <meta name="description" content="Suva Chamber of Commerce official homepage featuring events, weather updates, and business spotlights.">
     <meta name="author" content="Michael Tafunai">
 
-    <meta property="og:title" content="Suva Chamber Home">
-    <meta property="og:description" content="Discover businesses and opportunities in Suva, Fiji">
-    <meta property="og:image" content="images/logo.jpg">
-    <meta property="og:url" content="https://mtafunai.github.io/wdd231/chamber/index.html">
-
     <link rel="icon" href="images/logo.jpg">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+
+    <script defer src="scripts/home.js"></script>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <img src="images/logo.jpg" alt="Suva Chamber Logo" width="60">
-        <span>Suva Chamber</span>
+
+    <div class="logo-area">
+        <img src="images/logo.jpg" alt="Suva Chamber Logo" class="logo">
+        <h2>Suva Chamber</h2>
     </div>
 
-    <button id="menuBtn">&#9776;</button>
+    <button id="menuBtn" aria-label="Open menu">☰</button>
 
-    <nav id="navMenu">
+    <nav id="navMenu" aria-label="Main Navigation">
         <a href="index.html" class="active">Home</a>
         <a href="directory.html">Directory</a>
         <a href="#">Join</a>
-        <a href="#">Discover</a>
         <a href="#">Contact</a>
     </nav>
+
 </header>
 
 <main>
 
+
     <section class="hero">
-        <img src="images/hero.webp" alt="Suva City Hero Image">
+        <img src="images/hero.jpg" alt="Suva city business district">
         <div class="hero-text">
-            <h1>Suva Chamber of Commerce</h1>
+            <h1>Welcome to Suva Chamber</h1>
+            <p>Connecting businesses across Fiji</p>
             <a href="#" class="cta-button">Join the Chamber</a>
         </div>
     </section>
 
-    <section class="home-grid">
 
-        <section class="events">
-            <h2>Current Events</h2>
-            <p>Business Networking Expo - June 2026</p>
-            <p>Local Tourism Conference - July 2026</p>
-        </section>
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <p>Business networking night - Friday</p>
+        <p>Entrepreneur workshop - Next week</p>
+    </section>
 
-        <section class="weather">
-            <h2>Weather</h2>
 
-            <p><strong>Temperature:</strong>
-                <span id="current-temp"></span>
-            </p>
+    <section class="weather">
+        <h2>Current Weather</h2>
+        <p>Temperature: <span id="temp"></span></p>
+        <p>Description: <span id="desc"></span></p>
 
-            <p id="weather-desc"></p>
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
+    </section>
 
-            <div id="forecast"></div>
-        </section>
 
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container"></div>
-        </section>
-
+    <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlightContainer"></div>
     </section>
 
 </main>
 
 <footer>
-    <p>&copy; 2026 Suva Chamber of Commerce</p>
+    <p>&copy; <span id="year"></span> Suva Chamber</p>
     <p>Michael Tafunai | WDD231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
 </body>

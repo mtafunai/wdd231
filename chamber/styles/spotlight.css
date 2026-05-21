@@ -1,0 +1,14 @@
+.spotlights {
+    padding: 1rem;
+}
+
+#spotlightContainer {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    #spotlightContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
