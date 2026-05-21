@@ -6,7 +6,7 @@
 
     <title>Suva Chamber Directory</title>
 
-    <meta name="description" content="Browse verified businesses in the Suva Chamber of Commerce directory, connecting companies and services across Fiji.">
+    <meta name="description" content="Browse verified businesses in the Suva Chamber of Commerce directory connecting local companies and services across Fiji.">
     <meta name="author" content="Michael Tafunai">
 
     <!-- Favicon -->
@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Suva Chamber Directory - Businesses">
-    <meta property="og:description" content="Explore local businesses in the Suva Chamber of Commerce directory.">
+    <meta property="og:title" content="Suva Chamber Directory - Local Businesses">
+    <meta property="og:description" content="Explore trusted businesses in Suva Chamber directory.">
     <meta property="og:image" content="https://mtafunai.github.io/wdd231/chamber/images/logo.jpg">
     <meta property="og:url" content="https://mtafunai.github.io/wdd231/chamber/directory.html">
 
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- JavaScript -->
+    <!-- JS -->
     <script defer src="scripts/directory.js"></script>
 </head>
 
@@ -43,9 +43,9 @@
         <h2>Suva Chamber</h2>
     </div>
 
-    <button id="menuBtn" aria-label="Open navigation menu">☰</button>
+    <button id="menuBtn" aria-label="Open navigation">☰</button>
 
-    <nav id="navMenu">
+    <nav id="navMenu" aria-label="Main Navigation">
         <a href="directory.html" class="active">Directory</a>
         <a href="#">Discover</a>
         <a href="#">Join</a>
@@ -59,8 +59,8 @@
     <h1>Business Directory</h1>
 
     <div class="view-buttons">
-        <button id="gridBtn">Grid</button>
-        <button id="listBtn">List</button>
+        <button id="gridBtn" aria-label="Grid view">Grid</button>
+        <button id="listBtn" aria-label="List view">List</button>
     </div>
 
     <section id="members" class="grid-view"></section>

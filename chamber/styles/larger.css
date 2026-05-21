@@ -7,9 +7,8 @@
     nav {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
         width: auto;
-        margin-top: 0;
+        gap: 1rem;
     }
 
     .grid-view {
