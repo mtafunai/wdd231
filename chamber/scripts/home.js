@@ -1,3 +1,4 @@
+console.log("HOME JS LOADED");
 document.addEventListener("DOMContentLoaded", () => {
 
     
