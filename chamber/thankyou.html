@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thank You</title>
+</head>
+
+<body>
+
+<h1>Thank You for Applying</h1>
+
+<div id="output"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("output").innerHTML = `
+<p>Name: ${params.get("fname")} ${params.get("lname")}</p>
+<p>Email: ${params.get("email")}</p>
+<p>Phone: ${params.get("phone")}</p>
+<p>Organization: ${params.get("org")}</p>
+<p>Timestamp: ${params.get("timestamp")}</p>
+`;
+</script>
+
+</body>
+</html>

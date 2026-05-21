@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Join Suva Chamber</title>
+
+<meta name="description" content="Apply to join Suva Chamber of Commerce and select your membership level.">
+<meta name="author" content="Michael Tafunai">
+
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h2>Join Suva Chamber</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+    </nav>
+</header>
+
+<main>
+
+<form action="thankyou.html" method="get">
+
+    <label>First Name
+        <input type="text" name="fname" required autocomplete="given-name">
+    </label>
+
+    <label>Last Name
+        <input type="text" name="lname" required autocomplete="family-name">
+    </label>
+
+    <label>Title
+        <input type="text" name="title" pattern="[A-Za-z\\-\\s]{7,}" autocomplete="organization-title">
+    </label>
+
+    <label>Email
+        <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
+    </label>
+
+    <label>Phone
+        <input type="tel" name="phone" required autocomplete="tel">
+    </label>
+
+    <label>Organization
+        <input type="text" name="org" required autocomplete="organization">
+    </label>
+
+    <label>Membership Level
+        <select name="membership">
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+        </select>
+    </label>
+
+    <label>Description
+        <textarea name="description"></textarea>
+    </label>
+
+    <input type="hidden" name="timestamp" id="timestamp">
+
+    <input type="submit" value="Apply Now">
+
+</form>
+
+
+<section class="cards">
+
+    <div class="card">
+        <h3>NP Membership</h3>
+        <a href="#" onclick="openModal('np')">More Info</a>
+    </div>
+
+    <div class="card">
+        <h3>Bronze</h3>
+        <a href="#" onclick="openModal('bronze')">More Info</a>
+    </div>
+
+    <div class="card">
+        <h3>Silver</h3>
+        <a href="#" onclick="openModal('silver')">More Info</a>
+    </div>
+
+    <div class="card">
+        <h3>Gold</h3>
+        <a href="#" onclick="openModal('gold')">More Info</a>
+    </div>
+
+</section>
+
+
+<div id="np" class="modal">NP benefits here</div>
+<div id="bronze" class="modal">Bronze benefits here</div>
+<div id="silver" class="modal">Silver benefits here</div>
+<div id="gold" class="modal">Gold benefits here</div>
+
+</main>
+
+</body>
+</html>
