@@ -9,45 +9,49 @@
     <meta name="description" content="Browse verified businesses in the Suva Chamber of Commerce directory, connecting companies and services across Fiji.">
     <meta name="author" content="Michael Tafunai">
 
+    <!-- Favicon -->
     <link rel="icon" href="images/logo.jpg">
 
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-
+    <!-- Open Graph -->
     <meta property="og:title" content="Suva Chamber Directory - Businesses">
-    <meta property="og:description" content="Explore local businesses in Suva Chamber of Commerce directory.">
+    <meta property="og:description" content="Explore local businesses in the Suva Chamber of Commerce directory.">
     <meta property="og:image" content="https://mtafunai.github.io/wdd231/chamber/images/logo.jpg">
     <meta property="og:url" content="https://mtafunai.github.io/wdd231/chamber/directory.html">
 
     <meta name="theme-color" content="#003366">
 
-
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- JavaScript -->
     <script defer src="scripts/directory.js"></script>
 </head>
 
 <body>
 
 <header>
+
     <div class="logo-area">
         <img src="images/logo.jpg" alt="Suva Chamber Logo" class="logo">
         <h2>Suva Chamber</h2>
     </div>
 
-    <button id="menuBtn">☰</button>
+    <button id="menuBtn" aria-label="Open navigation menu">☰</button>
 
     <nav id="navMenu">
-        <a href="#" class="active">Directory</a>
+        <a href="directory.html" class="active">Directory</a>
         <a href="#">Discover</a>
         <a href="#">Join</a>
         <a href="#">Contact</a>
     </nav>
+
 </header>
 
 <main>

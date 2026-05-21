@@ -7,21 +7,12 @@
     nav {
         display: flex;
         flex-direction: row;
-        width: auto;
         gap: 1rem;
+        width: auto;
+        margin-top: 0;
     }
 
     .grid-view {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media screen and (min-width: 768px) {
-
-    .home-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .hero-text h1 {
-        font-size: 3rem;
     }
 }
