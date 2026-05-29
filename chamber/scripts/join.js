@@ -27,4 +27,3 @@ closeButtons.forEach(button => {
     });
 
 });
-```
