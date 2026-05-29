@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Thank You | Suva Chamber</title>
 
-    <meta name="description" content="Thank you for applying to the Suva Chamber of Commerce.">
-    <meta name="author" content="Michael Tafunai">
+    <meta name="description"
+        content="Thank you for applying to the Suva Chamber of Commerce.">
+    <meta name="author"
+        content="Michael Tafunai">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet"
+        href="styles/normalize.css">
+
+    <link rel="stylesheet"
+        href="styles/base.css">
+
+    <link rel="stylesheet"
+        href="styles/larger.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <img src="images/logo.jpg" alt="Suva Chamber Logo" width="60" height="60">
-        <span>Suva Chamber of Commerce</span>
-    </div>
+    <header>
 
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-    </nav>
-</header>
+        <div class="logo">
 
-<main>
+            <img src="images/logo.jpg"
+                alt="Suva Chamber Logo"
+                width="60"
+                height="60">
 
-    <h1>Thank You</h1>
+            <span>Suva Chamber of Commerce</span>
 
-    <section class="thankyou">
+        </div>
 
-        <h2>Your Application Has Been Submitted</h2>
+        <nav class="navigation">
 
-        <div id="results"></div>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
 
-    </section>
+        </nav>
 
-</main>
+    </header>
 
-<footer>
-    <p>&copy; 2026 Suva Chamber of Commerce | Michael Tafunai</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
+    <main>
 
-<script>
-const params = new URLSearchParams(window.location.search);
+        <h1>Thank You</h1>
 
-document.getElementById("results").innerHTML = `
-<p><strong>First Name:</strong> ${params.get("firstName")}</p>
+        <section class="thankyou">
 
-<p><strong>Last Name:</strong> ${params.get("lastName")}</p>
+            <h2>Your Application Has Been Submitted</h2>
 
-<p><strong>Email:</strong> ${params.get("email")}</p>
+            <div id="results"></div>
 
-<p><strong>Phone Number:</strong> ${params.get("phone")}</p>
+        </section>
 
-<p><strong>Organization:</strong> ${params.get("organization")}</p>
+    </main>
 
-<p><strong>Date Submitted:</strong> ${params.get("timestamp")}</p>
-`;
-</script>
+    <footer>
+
+        <p>&copy; 2026 Suva Chamber of Commerce | Michael Tafunai</p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("results").innerHTML = `
+            <p><strong>First Name:</strong> ${params.get("firstName")}</p>
+            <p><strong>Last Name:</strong> ${params.get("lastName")}</p>
+            <p><strong>Email:</strong> ${params.get("email")}</p>
+            <p><strong>Phone Number:</strong> ${params.get("phone")}</p>
+            <p><strong>Organization:</strong> ${params.get("organization")}</p>
+            <p><strong>Date Submitted:</strong> ${params.get("timestamp")}</p>
+        `;
+
+        document.getElementById("lastModified").textContent = document.lastModified;
+
+    </script>
 
 </body>
+
 </html>
-```
