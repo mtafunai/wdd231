@@ -1,6 +1,10 @@
-join.css
 main {
     padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .join-container {
@@ -19,6 +23,7 @@ label {
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    gap: .5rem;
 }
 
 input,
@@ -27,13 +32,16 @@ textarea {
     padding: .75rem;
     border: 1px solid #ccc;
     border-radius: 6px;
+    font-size: 1rem;
 }
 
 .submitBtn {
     background-color: #003366;
     color: white;
     border: none;
+    padding: 1rem;
     cursor: pointer;
+    border-radius: 6px;
     font-size: 1rem;
 }
 
@@ -48,7 +56,7 @@ textarea {
 
 .membership-card {
     background-color: #f4f4f4;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
 
@@ -73,11 +81,18 @@ textarea {
     animation-delay: 0.8s;
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.membership-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #003366;
+    font-weight: bold;
+}
+
+.navigation a.active {
+    background-color: #0055aa;
+    color: white;
+    padding: .5rem;
+    border-radius: 5px;
 }
 
 dialog {
@@ -91,6 +106,23 @@ dialog::backdrop {
     background: rgba(0,0,0,.5);
 }
 
+.close-modal {
+    margin-top: 1rem;
+    padding: .75rem 1rem;
+    border: none;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .join-container {
@@ -101,3 +133,4 @@ dialog::backdrop {
     }
 
 }
+```

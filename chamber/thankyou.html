@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Thank You</title>
+    <title>Thank You | Suva Chamber</title>
+
+    <meta name="description" content="Thank you for applying to the Suva Chamber of Commerce.">
+    <meta name="author" content="Michael Tafunai">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
 
-<h1>Thank You for Applying</h1>
+<header>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="Suva Chamber Logo" width="60" height="60">
+        <span>Suva Chamber of Commerce</span>
+    </div>
 
-<div id="output"></div>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Thank You</h1>
+
+    <section class="thankyou">
+
+        <h2>Your Application Has Been Submitted</h2>
+
+        <div id="results"></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Suva Chamber of Commerce | Michael Tafunai</p>
+</footer>
 
 <script>
 const params = new URLSearchParams(window.location.search);
 
-document.getElementById("output").innerHTML = `
-<p>Name: ${params.get("fname")} ${params.get("lname")}</p>
-<p>Email: ${params.get("email")}</p>
-<p>Phone: ${params.get("phone")}</p>
-<p>Organization: ${params.get("org")}</p>
-<p>Timestamp: ${params.get("timestamp")}</p>
+document.getElementById("results").innerHTML = `
+<p><strong>First Name:</strong> ${params.get("firstName")}</p>
+
+<p><strong>Last Name:</strong> ${params.get("lastName")}</p>
+
+<p><strong>Email:</strong> ${params.get("email")}</p>
+
+<p><strong>Phone Number:</strong> ${params.get("phone")}</p>
+
+<p><strong>Organization:</strong> ${params.get("organization")}</p>
+
+<p><strong>Date Submitted:</strong> ${params.get("timestamp")}</p>
 `;
 </script>
 
 </body>
 </html>
+```
