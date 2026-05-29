@@ -1,234 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Join | Suva Chamber of Commerce</title>
 
-    <meta name="description" content="Apply to join the Suva Chamber of Commerce.">
-    <meta name="author" content="Michael Tafunai">
+    <meta name="description"
+        content="Apply to join the Suva Chamber of Commerce and connect with local businesses, events, and networking opportunities in Fiji.">
 
-    <link rel="icon" href="images/logo.jpg">
+    <meta name="author"
+        content="Michael Tafunai">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/join.css">
+    
+    <meta property="og:title"
+        content="Join the Suva Chamber of Commerce">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <meta property="og:description"
+        content="Apply for chamber membership and connect with businesses, networking events, and professional opportunities in Suva, Fiji.">
+
+    <meta property="og:image"
+        content="https://mtafunai.github.io/wdd231/chamber/images/logo.jpg">
+
+    <meta property="og:url"
+        content="https://mtafunai.github.io/wdd231/chamber/join.html">
+
+    <meta property="og:type"
+        content="website">
+
+    <link rel="icon"
+        href="images/logo.jpg">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet"
+        href="styles/normalize.css">
+
+    <link rel="stylesheet"
+        href="styles/base.css">
+
+    <link rel="stylesheet"
+        href="styles/larger.css">
+
+    <link rel="stylesheet"
+        href="styles/join.css">
+
+
+    <script src="scripts/navigation.js"
+        defer></script>
+
+    <script src="scripts/join.js"
+        defer></script>
+
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <img src="images/logo.jpg" alt="Suva Chamber Logo" width="60" height="60">
-        <span>Suva Chamber of Commerce</span>
-    </div>
+    <header>
 
-    <button id="menu" aria-label="Menu"></button>
+        <div class="logo">
 
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html" class="active">Join</a>
-        <a href="#">Discover</a>
-    </nav>
-</header>
+            <img src="images/logo.jpg"
+                alt="Suva Chamber Logo"
+                width="60"
+                height="60">
 
-<main>
+            <span>Suva Chamber of Commerce</span>
 
-    <h1>Membership Application</h1>
+        </div>
 
-    <div class="join-container">
+        <button id="menu"
+            aria-label="Menu"></button>
 
-        <section class="form-section">
+        <nav class="navigation">
 
-            <form method="get" action="thankyou.html">
+            <a href="index.html">Home</a>
 
-                <label>
-                    First Name
-                    <input type="text"
-                        name="firstName"
-                        title="Enter your first name"
-                        autocomplete="given-name"
-                        required>
-                </label>
+            <a href="directory.html">Directory</a>
 
-                <label>
-                    Last Name
-                    <input type="text"
-                        name="lastName"
-                        title="Enter your last name"
-                        autocomplete="family-name"
-                        required>
-                </label>
+            <a href="join.html"
+                class="active">Join</a>
 
-                <label>
-                    Organizational Title
-                    <input type="text"
-                        name="orgTitle"
-                        title="Only letters, spaces, and hyphens allowed"
-                        autocomplete="organization-title"
-                        pattern="[A-Za-z\-\s]{7,}">
-                </label>
+            <a href="#">Discover</a>
 
-                <label>
-                    Email Address
-                    <input type="email"
-                        name="email"
-                        title="Enter your email address"
-                        autocomplete="email"
-                        placeholder="example@email.com"
-                        required>
-                </label>
+        </nav>
 
-                <label>
-                    Mobile Phone Number
-                    <input type="tel"
-                        name="phone"
-                        title="Enter your mobile phone number"
-                        autocomplete="tel"
-                        required>
-                </label>
+    </header>
 
-                <label>
-                    Business / Organization Name
-                    <input type="text"
-                        name="organization"
-                        title="Enter organization name"
-                        autocomplete="organization"
-                        required>
-                </label>
+    <main>
 
-                <label>
-                    Membership Level
-                    <select name="membership" required>
-                        <option value="">Select Membership</option>
-                        <option value="np">NP Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
+        <h1>Membership Application</h1>
 
-                <label>
-                    Business Description
-                    <textarea name="description"
-                        title="Describe your organization"
-                        rows="5"></textarea>
-                </label>
+        <div class="join-container">
 
-                <input type="hidden" id="timestamp" name="timestamp">
+            <section class="form-section">
 
-                <input type="submit"
-                    value="Apply for Membership"
-                    class="submitBtn">
+                <form method="get"
+                    action="thankyou.html">
 
-            </form>
+                    <label>
 
-        </section>
+                        First Name
 
-        <section class="membership-cards">
+                        <input type="text"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
 
-            <div class="membership-card">
-                <h2>NP Membership</h2>
-                <p>Free membership for non-profit organizations.</p>
+                    </label>
 
-                <a href="#" class="open-modal" data-modal="npModal">
-                    Learn More
-                </a>
-            </div>
+                    <label>
 
-            <div class="membership-card">
-                <h2>Bronze Membership</h2>
-                <p>Affordable networking opportunities.</p>
+                        Last Name
 
-                <a href="#" class="open-modal" data-modal="bronzeModal">
-                    Learn More
-                </a>
-            </div>
+                        <input type="text"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
 
-            <div class="membership-card">
-                <h2>Silver Membership</h2>
-                <p>Advertising and training benefits.</p>
+                    </label>
 
-                <a href="#" class="open-modal" data-modal="silverModal">
-                    Learn More
-                </a>
-            </div>
+                    <label>
 
-            <div class="membership-card">
-                <h2>Gold Membership</h2>
-                <p>Premium business exposure and VIP access.</p>
+                        Organizational Title
 
-                <a href="#" class="open-modal" data-modal="goldModal">
-                    Learn More
-                </a>
-            </div>
+                        <input type="text"
+                            name="orgTitle"
+                            title="Only letters, spaces, and hyphens allowed"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\-\s]{7,}">
 
-        </section>
+                    </label>
 
-    </div>
+                    <label>
 
-    <!-- MODALS -->
+                        Email Address
 
-    <dialog id="npModal">
-        <h2>NP Membership Benefits</h2>
+                        <input type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
 
-        <ul>
-            <li>No membership fee</li>
-            <li>Community event access</li>
-            <li>Networking opportunities</li>
-        </ul>
+                    </label>
 
-        <button class="close-modal">Close</button>
-    </dialog>
+                    <label>
 
-    <dialog id="bronzeModal">
-        <h2>Bronze Membership Benefits</h2>
+                        Mobile Phone Number
 
-        <ul>
-            <li>Business networking</li>
-            <li>Event discounts</li>
-            <li>Training sessions</li>
-        </ul>
+                        <input type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required>
 
-        <button class="close-modal">Close</button>
-    </dialog>
+                    </label>
 
-    <dialog id="silverModal">
-        <h2>Silver Membership Benefits</h2>
+                    <label>
 
-        <ul>
-            <li>Homepage advertising</li>
-            <li>Business spotlight opportunities</li>
-            <li>Advanced training workshops</li>
-        </ul>
+                        Business / Organization Name
 
-        <button class="close-modal">Close</button>
-    </dialog>
+                        <input type="text"
+                            name="organization"
+                            title="Enter organization name"
+                            autocomplete="organization"
+                            required>
 
-    <dialog id="goldModal">
-        <h2>Gold Membership Benefits</h2>
+                    </label>
 
-        <ul>
-            <li>Premium homepage spotlight</li>
-            <li>VIP event invitations</li>
-            <li>Exclusive advertising opportunities</li>
-        </ul>
+                    <label>
 
-        <button class="close-modal">Close</button>
-    </dialog>
+                        Membership Level
 
-</main>
+                        <select name="membership"
+                            required>
 
-<footer>
-    <p>&copy; 2026 Suva Chamber of Commerce | Michael Tafunai</p>
-</footer>
+                            <option value="">Select Membership</option>
+
+                            <option value="np">NP Membership</option>
+
+                            <option value="bronze">Bronze Membership</option>
+
+                            <option value="silver">Silver Membership</option>
+
+                            <option value="gold">Gold Membership</option>
+
+                        </select>
+
+                    </label>
+
+                    <label>
+
+                        Business Description
+
+                        <textarea name="description"
+                            title="Describe your organization"
+                            rows="5"></textarea>
+
+                    </label>
+
+                    <input type="hidden"
+                        id="timestamp"
+                        name="timestamp">
+
+                    <button type="submit"
+                        class="submitBtn">
+
+                        Apply for Membership
+
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="membership-cards">
+
+                <div class="membership-card">
+
+                    <h2>NP Membership</h2>
+
+                    <p>Free membership for non-profit organizations.</p>
+
+                    <a href="#"
+                        class="open-modal"
+                        data-modal="npModal">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+                <div class="membership-card">
+
+                    <h2>Bronze Membership</h2>
+
+                    <p>Affordable networking opportunities.</p>
+
+                    <a href="#"
+                        class="open-modal"
+                        data-modal="bronzeModal">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+                <div class="membership-card">
+
+                    <h2>Silver Membership</h2>
+
+                    <p>Advertising and training benefits.</p>
+
+                    <a href="#"
+                        class="open-modal"
+                        data-modal="silverModal">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+                <div class="membership-card">
+
+                    <h2>Gold Membership</h2>
+
+                    <p>Premium business exposure and VIP access.</p>
+
+                    <a href="#"
+                        class="open-modal"
+                        data-modal="goldModal">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- MODALS -->
+
+        <dialog id="npModal">
+
+            <h2>NP Membership Benefits</h2>
+
+            <ul>
+
+                <li>No membership fee</li>
+
+                <li>Community event access</li>
+
+                <li>Networking opportunities</li>
+
+            </ul>
+
+            <button class="close-modal">
+
+                Close
+
+            </button>
+
+        </dialog>
+
+        <dialog id="bronzeModal">
+
+            <h2>Bronze Membership Benefits</h2>
+
+            <ul>
+
+                <li>Business networking</li>
+
+                <li>Event discounts</li>
+
+                <li>Training sessions</li>
+
+            </ul>
+
+            <button class="close-modal">
+
+                Close
+
+            </button>
+
+        </dialog>
+
+        <dialog id="silverModal">
+
+            <h2>Silver Membership Benefits</h2>
+
+            <ul>
+
+                <li>Homepage advertising</li>
+
+                <li>Business spotlight opportunities</li>
+
+                <li>Advanced training workshops</li>
+
+            </ul>
+
+            <button class="close-modal">
+
+                Close
+
+            </button>
+
+        </dialog>
+
+        <dialog id="goldModal">
+
+            <h2>Gold Membership Benefits</h2>
+
+            <ul>
+
+                <li>Premium homepage spotlight</li>
+
+                <li>VIP event invitations</li>
+
+                <li>Exclusive advertising opportunities</li>
+
+            </ul>
+
+            <button class="close-modal">
+
+                Close
+
+            </button>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Suva Chamber of Commerce | Michael Tafunai</p>
+
+    </footer>
 
 </body>
+
 </html>
 ```
