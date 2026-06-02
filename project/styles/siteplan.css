@@ -1,63 +1,81 @@
 :root {
     --primary: #003366;
-    --accent: #FF6600;
+    --secondary: #FF6600;
     --background: #F4F4F4;
-    --text: #222;
+    --text: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background);
     color: var(--text);
-    margin: 0;
     line-height: 1.6;
 }
 
-header,
-footer {
+header {
     background-color: var(--primary);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     padding: 1rem;
 }
 
 section {
     background: white;
-    padding: 1rem;
     margin: 1rem 0;
+    padding: 1.5rem;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-h1,
 h2 {
-    font-family: 'Montserrat', sans-serif;
     color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
 }
 
-.color-box {
+h3 {
+    margin-top: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.color {
     padding: 1rem;
     margin: 1rem 0;
-    color: white;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .navy {
-    background: #003366;
+    background-color: #003366;
+    color: white;
 }
 
 .orange {
-    background: #FF6600;
+    background-color: #FF6600;
+    color: white;
 }
 
-.light {
-    background: #F4F4F4;
-    color: black;
+.gray {
+    background-color: #F4F4F4;
     border: 1px solid #ccc;
 }
 
@@ -70,7 +88,34 @@ h2 {
 }
 
 pre {
-    background: #eee;
+    background-color: #eeeeee;
     padding: 1rem;
+    border-radius: 5px;
     overflow-x: auto;
+}
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    pre {
+        font-size: 0.8rem;
+    }
 }
