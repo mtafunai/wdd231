@@ -1,0 +1,76 @@
+:root {
+    --primary: #003366;
+    --accent: #FF6600;
+    --background: #F4F4F4;
+    --text: #222;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+}
+
+section {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);
+}
+
+.color-box {
+    padding: 1rem;
+    margin: 1rem 0;
+    color: white;
+    font-weight: bold;
+}
+
+.navy {
+    background: #003366;
+}
+
+.orange {
+    background: #FF6600;
+}
+
+.light {
+    background: #F4F4F4;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+pre {
+    background: #eee;
+    padding: 1rem;
+    overflow-x: auto;
+}
