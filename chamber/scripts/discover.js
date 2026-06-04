@@ -1,8 +1,8 @@
 import { places } from "../data/places.mjs";
 
-const cardsContainer = document.querySelector("#discover-cards");
+const cards = document.querySelector("#discover-cards");
 
-places.forEach((place) => {
+places.forEach(place => {
 
     const card = document.createElement("article");
 
@@ -10,8 +10,7 @@ places.forEach((place) => {
         <h2>${place.name}</h2>
 
         <figure>
-            <img
-                src="${place.image}"
+            <img src="${place.image}"
                 alt="${place.name}"
                 loading="lazy"
                 width="300"
@@ -25,14 +24,14 @@ places.forEach((place) => {
         <button type="button">Learn More</button>
     `;
 
-    cardsContainer.appendChild(card);
+    cards.appendChild(card);
 });
 
 const visitMessage = document.querySelector("#visit-message");
 
 const lastVisit = localStorage.getItem("lastVisit");
 
-const currentDate = Date.now();
+const now = Date.now();
 
 if (!lastVisit) {
 
@@ -41,15 +40,15 @@ if (!lastVisit) {
 
 } else {
 
-    const daysDifference =
-        Math.floor((currentDate - Number(lastVisit)) / 86400000);
+    const days =
+        Math.floor((now - Number(lastVisit)) / 86400000);
 
-    if (daysDifference < 1) {
+    if (days < 1) {
 
         visitMessage.textContent =
             "Back so soon! Awesome!";
 
-    } else if (daysDifference === 1) {
+    } else if (days === 1) {
 
         visitMessage.textContent =
             "You last visited 1 day ago.";
@@ -57,11 +56,11 @@ if (!lastVisit) {
     } else {
 
         visitMessage.textContent =
-            `You last visited ${daysDifference} days ago.`;
+            `You last visited ${days} days ago.`;
     }
 }
 
-localStorage.setItem("lastVisit", currentDate);
+localStorage.setItem("lastVisit", now);
 
 document.querySelector("#lastModified").textContent =
     document.lastModified;

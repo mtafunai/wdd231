@@ -11,14 +11,14 @@ export const places = [
     name: "Fiji Museum",
     image: "images/fiji-museum.jpg",
     address: "Thurston Gardens, Suva",
-    description: "National museum displaying Fiji's history, culture, and archaeological artifacts."
+    description: "National museum displaying Fiji's history and cultural heritage."
 },
 
 {
     name: "Albert Park",
     image: "images/albert-park.jpg",
     address: "Victoria Parade, Suva",
-    description: "Large public park used for sporting events, ceremonies, and community gatherings."
+    description: "Popular public park used for sports, ceremonies and community events."
 },
 
 {
@@ -32,7 +32,7 @@ export const places = [
     name: "Suva Waterfront",
     image: "images/suva-waterfront.jpg",
     address: "Victoria Parade, Suva",
-    description: "Popular waterfront area with scenic harbor views and business activity."
+    description: "Scenic harbor area offering beautiful waterfront views."
 },
 
 {
@@ -46,14 +46,14 @@ export const places = [
     name: "Damodar City",
     image: "images/damodar-city.jpg",
     address: "Laucala Bay Road, Suva",
-    description: "Modern shopping, dining, and entertainment destination."
+    description: "Modern shopping and entertainment destination."
 },
 
 {
     name: "Colo-i-Suva Forest Park",
     image: "images/colo-i-suva.jpg",
     address: "Princes Road, Suva",
-    description: "Rainforest reserve featuring hiking trails, waterfalls, and swimming holes."
+    description: "Rainforest reserve with trails, waterfalls and swimming holes."
 }
 
 ];
