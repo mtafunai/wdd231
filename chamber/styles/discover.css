@@ -1,49 +1,27 @@
-#visit-message {
-    background: #eef5ff;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1rem;
-    margin-bottom: 1rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.visit-message {
+    background-color: #eef5ff;
     border-left: 5px solid #003366;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-weight: 700;
 }
 
 #discover-cards {
     display: grid;
     gap: 1rem;
-}
 
-
-#discover-cards article:nth-child(1) {
-    grid-area: one;
-}
-
-#discover-cards article:nth-child(2) {
-    grid-area: two;
-}
-
-#discover-cards article:nth-child(3) {
-    grid-area: three;
-}
-
-#discover-cards article:nth-child(4) {
-    grid-area: four;
-}
-
-#discover-cards article:nth-child(5) {
-    grid-area: five;
-}
-
-#discover-cards article:nth-child(6) {
-    grid-area: six;
-}
-
-#discover-cards article:nth-child(7) {
-    grid-area: seven;
-}
-
-#discover-cards article:nth-child(8) {
-    grid-area: eight;
-}
-
-#discover-cards {
     grid-template-areas:
         "one"
         "two"
@@ -55,22 +33,82 @@
         "eight";
 }
 
-article {
-    background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 10px;
+#discover-cards article:nth-child(2) {
+    grid-area: one;
 }
 
-article img {
+#discover-cards article:nth-child(3) {
+    grid-area: two;
+}
+
+#discover-cards article:nth-child(4) {
+    grid-area: three;
+}
+
+#discover-cards article:nth-child(5) {
+    grid-area: four;
+}
+
+#discover-cards article:nth-child(6) {
+    grid-area: five;
+}
+
+#discover-cards article:nth-child(7) {
+    grid-area: six;
+}
+
+#discover-cards article:nth-child(8) {
+    grid-area: seven;
+}
+
+#discover-cards article:nth-child(9) {
+    grid-area: eight;
+}
+
+#discover-cards article {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+#discover-cards h2 {
+    margin-top: 0;
+    color: #003366;
+}
+
+#discover-cards figure {
+    margin: 0;
+}
+
+#discover-cards img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
+#discover-cards address {
+    font-style: normal;
+    margin: 0.75rem 0;
+    font-weight: 700;
+}
+
+#discover-cards button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#discover-cards button:hover {
+    background-color: #0055aa;
+}
 
 @media (min-width: 641px) {
 
     #discover-cards {
-
         grid-template-columns: 1fr 1fr;
 
         grid-template-areas:
@@ -80,17 +118,21 @@ article img {
             "seven eight";
     }
 
-    article img:hover {
+    #discover-cards img {
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    #discover-cards img:hover {
         transform: scale(1.05);
-        transition: 0.3s;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
     }
 }
-
 
 @media (min-width: 1025px) {
 
     #discover-cards {
-
         grid-template-columns: 1fr 1fr 1fr;
 
         grid-template-areas:
