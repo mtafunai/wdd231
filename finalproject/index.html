@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fiji Electrical & Appliance Repair Guide</title>
+
+<meta name="description" content="Electrical troubleshooting, appliance repair guides, and safety information for homes and businesses in Fiji.">
+
+<meta name="author" content="Michael Tafunai">
+
+<meta property="og:title" content="Fiji Electrical & Appliance Repair Guide">
+<meta property="og:description" content="Electrical troubleshooting and appliance repair information.">
+<meta property="og:image" content="https://mtafunai.github.io/wdd231/finalproject/images/hero.webp">
+<meta property="og:url" content="https://mtafunai.github.io/wdd231/finalproject/">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="images/favicon.ico">
+
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Fiji Electrical & Appliance Repair Guide</h1>
+    </div>
+
+    <button id="menuButton" aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="safety.html">Safety</a>
+        <a href="contactform.html">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+    <img
+        src="images/hero.webp"
+        alt="Electrical maintenance worker"
+        loading="lazy"
+        width="800"
+        height="450">
+
+    <div class="hero-text">
+        <h2>Electrical Solutions Made Simple</h2>
+
+        <p>
+            Learn how to identify common electrical and appliance
+            problems safely before calling a technician.
+        </p>
+    </div>
+
+</section>
+
+<section class="welcome">
+
+    <h2>Welcome</h2>
+
+    <p>
+        This website provides practical troubleshooting
+        information for electrical systems and household
+        appliances commonly found throughout Fiji.
+    </p>
+
+    <p id="visitCounter"></p>
+
+</section>
+
+<section class="features">
+
+    <article class="card">
+        <h3>Outlet Problems</h3>
+
+        <p>
+            Learn why power outlets stop working and what to
+            check safely.
+        </p>
+    </article>
+
+    <article class="card">
+        <h3>Air Conditioners</h3>
+
+        <p>
+            Common portable AC faults and troubleshooting tips.
+        </p>
+    </article>
+
+    <article class="card">
+        <h3>Electrical Safety</h3>
+
+        <p>
+            Protect yourself and your family using safe electrical
+            practices.
+        </p>
+    </article>
+
+</section>
+
+<dialog id="safetyModal">
+
+    <h2>Electrical Safety Reminder</h2>
+
+    <p>
+        Always disconnect power before inspecting electrical
+        equipment or appliances.
+    </p>
+
+    <button id="closeModal">
+        Close
+    </button>
+
+</dialog>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="year"></span>
+        Michael Tafunai | WDD231 Final Project
+    </p>
+
+    <p id="lastModified"></p>
+
+    <p>
+        <a href="attributions.html">Attributions</a> |
+        <a href="#">Project Video</a>
+    </p>
+
+</footer>
+
+<script type="module" src="scripts/main.js"></script>
+
+</body>
+</html>

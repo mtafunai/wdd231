@@ -1,0 +1,107 @@
+[
+{
+"id":1,
+"appliance":"Portable Air Conditioner",
+"problem":"Not Cooling",
+"cause":"Dirty Air Filter",
+"solution":"Clean or replace the filter"
+},
+{
+"id":2,
+"appliance":"Portable Air Conditioner",
+"problem":"Breaker Trips",
+"cause":"Overloaded Circuit",
+"solution":"Use a dedicated power outlet"
+},
+{
+"id":3,
+"appliance":"Refrigerator",
+"problem":"Not Cooling",
+"cause":"Faulty Thermostat",
+"solution":"Replace thermostat"
+},
+{
+"id":4,
+"appliance":"Refrigerator",
+"problem":"Water Leakage",
+"cause":"Blocked Drain",
+"solution":"Clean drain line"
+},
+{
+"id":5,
+"appliance":"Washing Machine",
+"problem":"Will Not Start",
+"cause":"Faulty Door Switch",
+"solution":"Replace door switch"
+},
+{
+"id":6,
+"appliance":"Washing Machine",
+"problem":"Not Draining",
+"cause":"Blocked Pump",
+"solution":"Clean drain pump"
+},
+{
+"id":7,
+"appliance":"Microwave",
+"problem":"No Power",
+"cause":"Blown Fuse",
+"solution":"Replace fuse"
+},
+{
+"id":8,
+"appliance":"Microwave",
+"problem":"Not Heating",
+"cause":"Faulty Magnetron",
+"solution":"Replace magnetron"
+},
+{
+"id":9,
+"appliance":"Electric Kettle",
+"problem":"Not Heating",
+"cause":"Burned Heating Element",
+"solution":"Replace element"
+},
+{
+"id":10,
+"appliance":"Electric Oven",
+"problem":"Uneven Heating",
+"cause":"Damaged Element",
+"solution":"Replace heating element"
+},
+{
+"id":11,
+"appliance":"Ceiling Fan",
+"problem":"Slow Speed",
+"cause":"Failed Capacitor",
+"solution":"Replace capacitor"
+},
+{
+"id":12,
+"appliance":"Water Pump",
+"problem":"Will Not Start",
+"cause":"Motor Fault",
+"solution":"Inspect or replace motor"
+},
+{
+"id":13,
+"appliance":"Television",
+"problem":"No Display",
+"cause":"Power Supply Failure",
+"solution":"Inspect power board"
+},
+{
+"id":14,
+"appliance":"Desktop Computer",
+"problem":"Random Shutdown",
+"cause":"Overheating",
+"solution":"Clean cooling system"
+},
+{
+"id":15,
+"appliance":"Rice Cooker",
+"problem":"Not Cooking",
+"cause":"Faulty Thermostat",
+"solution":"Replace thermostat"
+}
+]

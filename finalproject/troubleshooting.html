@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Troubleshooting Guides | Fiji Electrical & Appliance Repair Guide</title>
+
+<meta name="description" content="Browse appliance troubleshooting guides and common electrical faults.">
+
+<meta name="author" content="Michael Tafunai">
+
+<meta property="og:title" content="Troubleshooting Guides">
+<meta property="og:description" content="Common appliance faults and repair solutions.">
+<meta property="og:image" content="https://mtafunai.github.io/wdd231/finalproject/images/repairs.webp">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="images/favicon.ico">
+
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Fiji Electrical & Appliance Repair Guide</h1>
+    </div>
+
+    <button id="menuButton" aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="troubleshooting.html" class="active">Troubleshooting</a>
+        <a href="safety.html">Safety</a>
+        <a href="contactform.html">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+    <h2>Appliance Troubleshooting Database</h2>
+
+    <p>
+        Browse common appliance problems, likely causes,
+        and recommended solutions.
+    </p>
+</section>
+
+<section>
+    <div id="repairCards" class="repair-grid"></div>
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="year"></span>
+        Michael Tafunai | WDD231 Final Project
+    </p>
+
+    <p id="lastModified"></p>
+
+    <p>
+        <a href="attributions.html">Attributions</a> |
+        <a href="#">Project Video</a>
+    </p>
+
+</footer>
+
+<script type="module" src="scripts/repairs.js"></script>
+
+</body>
+</html>

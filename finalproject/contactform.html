@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Fiji Electrical & Appliance Repair Guide</title>
+
+<meta name="description" content="Contact us for electrical and appliance repair information.">
+
+<meta name="author" content="Michael Tafunai">
+
+<link rel="icon" href="images/favicon.ico">
+
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>Fiji Electrical & Appliance Repair Guide</h1>
+</div>
+
+<button id="menuButton">☰</button>
+
+<nav id="navigation">
+<a href="index.html">Home</a>
+<a href="troubleshooting.html">Troubleshooting</a>
+<a href="safety.html">Safety</a>
+<a href="contactform.html" class="active">Contact</a>
+</nav>
+
+</header>
+
+<main>
+
+<h2>Contact Form</h2>
+
+<form action="contact.html" method="get">
+
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="fname" required>
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lname" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" required>
+
+<label for="message">Message</label>
+<textarea
+id="message"
+name="message"
+rows="5"
+required></textarea>
+
+<input type="submit" value="Send Message">
+
+</form>
+
+</main>
+
+<footer>
+
+<p>
+&copy; <span id="year"></span>
+Michael Tafunai
+</p>
+
+<p id="lastModified"></p>
+
+<p>
+<a href="attributions.html">Attributions</a> |
+<a href="#">Project Video</a>
+</p>
+
+</footer>
+
+<script type="module" src="scripts/form.js"></script>
+
+</body>
+</html>
