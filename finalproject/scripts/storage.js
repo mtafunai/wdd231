@@ -4,9 +4,15 @@ document.querySelector("#menuButton");
 const navigation =
 document.querySelector("#navigation");
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-});
+if (menuButton) {
+
+    menuButton.addEventListener("click", () => {
+
+        navigation.classList.toggle("open");
+
+    });
+
+}
 
 document.querySelector("#year").textContent =
 new Date().getFullYear();
@@ -15,27 +21,32 @@ document.querySelector("#lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
 
 const button =
-document.querySelector("#acknowledgeBtn");
+document.querySelector("#acknowledgeButton");
 
-const message =
-document.querySelector("#safetyMessage");
+const status =
+document.querySelector("#statusMessage");
 
-const acknowledged =
-localStorage.getItem("safetyAcknowledged");
+if (localStorage.getItem("safetyAccepted")) {
 
-if (acknowledged === "yes") {
+    status.innerHTML = `
+        <strong>
+            Safety information already acknowledged.
+        </strong>
+    `;
 
-    message.textContent =
-    "Thank you. Your safety acknowledgement has been saved.";
 }
 
 button.addEventListener("click", () => {
 
     localStorage.setItem(
-        "safetyAcknowledged",
-        "yes"
+        "safetyAccepted",
+        "true"
     );
 
-    message.textContent =
-    "Thank you. Your safety acknowledgement has been saved.";
+    status.innerHTML = `
+        <strong>
+            Thank you for reviewing the safety information.
+        </strong>
+    `;
+
 });

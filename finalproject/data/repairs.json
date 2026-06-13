@@ -1,107 +1,92 @@
 [
 {
-"id":1,
-"appliance":"Portable Air Conditioner",
-"problem":"Not Cooling",
-"cause":"Dirty Air Filter",
-"solution":"Clean or replace the filter"
+    "appliance": "Power Outlet",
+    "problem": "Outlet not working",
+    "cause": "Loose wiring",
+    "solution": "Turn off power and contact a licensed electrician"
 },
 {
-"id":2,
-"appliance":"Portable Air Conditioner",
-"problem":"Breaker Trips",
-"cause":"Overloaded Circuit",
-"solution":"Use a dedicated power outlet"
+    "appliance": "Portable Air Conditioner",
+    "problem": "Keeps shutting down",
+    "cause": "Dirty air filter",
+    "solution": "Clean or replace the filter"
 },
 {
-"id":3,
-"appliance":"Refrigerator",
-"problem":"Not Cooling",
-"cause":"Faulty Thermostat",
-"solution":"Replace thermostat"
+    "appliance": "Refrigerator",
+    "problem": "Not cooling",
+    "cause": "Condenser coils are dirty",
+    "solution": "Clean the condenser coils"
 },
 {
-"id":4,
-"appliance":"Refrigerator",
-"problem":"Water Leakage",
-"cause":"Blocked Drain",
-"solution":"Clean drain line"
+    "appliance": "Ceiling Fan",
+    "problem": "Fan not spinning",
+    "cause": "Faulty capacitor",
+    "solution": "Replace the capacitor"
 },
 {
-"id":5,
-"appliance":"Washing Machine",
-"problem":"Will Not Start",
-"cause":"Faulty Door Switch",
-"solution":"Replace door switch"
+    "appliance": "Electric Kettle",
+    "problem": "Will not heat",
+    "cause": "Burned heating element",
+    "solution": "Replace the heating element"
 },
 {
-"id":6,
-"appliance":"Washing Machine",
-"problem":"Not Draining",
-"cause":"Blocked Pump",
-"solution":"Clean drain pump"
+    "appliance": "Microwave Oven",
+    "problem": "No power",
+    "cause": "Blown fuse",
+    "solution": "Replace the fuse"
 },
 {
-"id":7,
-"appliance":"Microwave",
-"problem":"No Power",
-"cause":"Blown Fuse",
-"solution":"Replace fuse"
+    "appliance": "Rice Cooker",
+    "problem": "Does not cook properly",
+    "cause": "Damaged thermostat",
+    "solution": "Replace thermostat"
 },
 {
-"id":8,
-"appliance":"Microwave",
-"problem":"Not Heating",
-"cause":"Faulty Magnetron",
-"solution":"Replace magnetron"
+    "appliance": "Washing Machine",
+    "problem": "Will not drain",
+    "cause": "Blocked drain hose",
+    "solution": "Clean the hose"
 },
 {
-"id":9,
-"appliance":"Electric Kettle",
-"problem":"Not Heating",
-"cause":"Burned Heating Element",
-"solution":"Replace element"
+    "appliance": "Water Pump",
+    "problem": "Low water pressure",
+    "cause": "Blocked impeller",
+    "solution": "Clean the impeller"
 },
 {
-"id":10,
-"appliance":"Electric Oven",
-"problem":"Uneven Heating",
-"cause":"Damaged Element",
-"solution":"Replace heating element"
+    "appliance": "Television",
+    "problem": "No picture",
+    "cause": "Faulty power supply",
+    "solution": "Have the power board inspected"
 },
 {
-"id":11,
-"appliance":"Ceiling Fan",
-"problem":"Slow Speed",
-"cause":"Failed Capacitor",
-"solution":"Replace capacitor"
+    "appliance": "Electric Iron",
+    "problem": "No heat",
+    "cause": "Broken thermostat",
+    "solution": "Replace thermostat"
 },
 {
-"id":12,
-"appliance":"Water Pump",
-"problem":"Will Not Start",
-"cause":"Motor Fault",
-"solution":"Inspect or replace motor"
+    "appliance": "Toaster",
+    "problem": "Bread not toasting",
+    "cause": "Heating element failure",
+    "solution": "Replace heating element"
 },
 {
-"id":13,
-"appliance":"Television",
-"problem":"No Display",
-"cause":"Power Supply Failure",
-"solution":"Inspect power board"
+    "appliance": "Blender",
+    "problem": "Motor not running",
+    "cause": "Worn carbon brushes",
+    "solution": "Replace brushes"
 },
 {
-"id":14,
-"appliance":"Desktop Computer",
-"problem":"Random Shutdown",
-"cause":"Overheating",
-"solution":"Clean cooling system"
+    "appliance": "Vacuum Cleaner",
+    "problem": "Weak suction",
+    "cause": "Blocked filter",
+    "solution": "Clean filter"
 },
 {
-"id":15,
-"appliance":"Rice Cooker",
-"problem":"Not Cooking",
-"cause":"Faulty Thermostat",
-"solution":"Replace thermostat"
+    "appliance": "Extension Cord",
+    "problem": "Intermittent power",
+    "cause": "Loose connection",
+    "solution": "Replace extension cord"
 }
 ]

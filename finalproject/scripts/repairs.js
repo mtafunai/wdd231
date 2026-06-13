@@ -1,12 +1,15 @@
-const menuButton =
-document.querySelector("#menuButton");
+import { displayRepairs } from "./display.js";
 
-const navigation =
-document.querySelector("#navigation");
+const menuButton = document.querySelector("#menuButton");
+const navigation = document.querySelector("#navigation");
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-});
+if (menuButton) {
+
+    menuButton.addEventListener("click", () => {
+        navigation.classList.toggle("open");
+    });
+
+}
 
 document.querySelector("#year").textContent =
 new Date().getFullYear();
@@ -14,60 +17,36 @@ new Date().getFullYear();
 document.querySelector("#lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
 
-const cards =
-document.querySelector("#repairCards");
+const cards = document.querySelector("#repairCards");
 
-async function getRepairData() {
+async function getRepairs() {
 
     try {
 
         const response =
-        await fetch("data/repairs.json");
+            await fetch("data/repairs.json");
 
         if (!response.ok) {
-            throw new Error(
-                "Unable to load repair data."
-            );
+            throw new Error("Unable to load repair data.");
         }
 
-        const repairs =
-        await response.json();
+        const repairs = await response.json();
 
-        displayRepairs(repairs);
+        displayRepairs(repairs, cards);
 
-    } catch (error) {
-
-        cards.innerHTML =
-        `<p>Repair data could not be loaded.</p>`;
-
-        console.error(error);
     }
-}
+    catch (error) {
 
-function displayRepairs(repairs) {
-
-    repairs.forEach((repair) => {
-
-        const card =
-        document.createElement("article");
-
-        card.classList.add("repair-card");
-
-        card.innerHTML = `
-            <h3>${repair.appliance}</h3>
-
-            <p><strong>Problem:</strong>
-            ${repair.problem}</p>
-
-            <p><strong>Cause:</strong>
-            ${repair.cause}</p>
-
-            <p><strong>Solution:</strong>
-            ${repair.solution}</p>
+        cards.innerHTML = `
+            <p>
+                Error loading repair information.
+            </p>
         `;
 
-        cards.appendChild(card);
-    });
+        console.error(error);
+
+    }
+
 }
 
-getRepairData();
+getRepairs();

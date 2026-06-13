@@ -6,27 +6,19 @@ document.querySelector("#navigation");
 
 if(menuButton){
 
-menuButton.addEventListener("click", () => {
+menuButton.addEventListener("click",()=>{
+
 navigation.classList.toggle("open");
+
 });
 
 }
 
-const year =
-document.querySelector("#year");
-
-if(year){
-year.textContent =
+document.querySelector("#year").textContent =
 new Date().getFullYear();
-}
 
-const modified =
-document.querySelector("#lastModified");
-
-if(modified){
-modified.textContent =
+document.querySelector("#lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
-}
 
 const results =
 document.querySelector("#results");
@@ -52,17 +44,46 @@ const message =
 params.get("message");
 
 results.innerHTML = `
-<h3>Submission Details</h3>
 
-<p><strong>First Name:</strong> ${fname}</p>
+<h3>
+Submission Details
+</h3>
 
-<p><strong>Last Name:</strong> ${lname}</p>
+<p>
+<strong>
+First Name:
+</strong>
+${fname}
+</p>
 
-<p><strong>Email:</strong> ${email}</p>
+<p>
+<strong>
+Last Name:
+</strong>
+${lname}
+</p>
 
-<p><strong>Subject:</strong> ${subject}</p>
+<p>
+<strong>
+Email:
+</strong>
+${email}
+</p>
 
-<p><strong>Message:</strong> ${message}</p>
+<p>
+<strong>
+Subject:
+</strong>
+${subject}
+</p>
+
+<p>
+<strong>
+Message:
+</strong>
+${message}
+</p>
+
 `;
 
 }

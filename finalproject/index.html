@@ -1,25 +1,44 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fiji Electrical & Appliance Repair Guide</title>
+    <title>Fiji Electrical & Appliance Repair Guide | Home</title>
 
-<meta name="description" content="Electrical troubleshooting, appliance repair guides, and safety information for homes and businesses in Fiji.">
+    <meta
+        name="description"
+        content="Electrical troubleshooting, appliance repair guides, and electrical safety information for homes and businesses in Fiji.">
 
-<meta name="author" content="Michael Tafunai">
+    <meta
+        name="author"
+        content="Michael Tafunai">
 
-<meta property="og:title" content="Taffs Electrical & Appliance Repair Guide">
-<meta property="og:description" content="Electrical troubleshooting and appliance repair information.">
-<meta property="og:image" content="https://mtafunai.github.io/wdd231/finalproject/images/hero.webp">
-<meta property="og:url" content="https://mtafunai.github.io/wdd231/finalproject/">
-<meta property="og:type" content="website">
+    <meta
+        property="og:title"
+        content="Fiji Electrical & Appliance Repair Guide">
 
-<link rel="icon" href="images/favicon.ico">
+    <meta
+        property="og:description"
+        content="Electrical troubleshooting and appliance repair information for homes and businesses in Fiji.">
 
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
+    <meta
+        property="og:image"
+        content="https://mtafunai.github.io/wdd231/finalproject/images/hero.webp">
+
+    <meta
+        property="og:url"
+        content="https://mtafunai.github.io/wdd231/finalproject/index.html">
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
@@ -27,117 +46,152 @@
 <header>
 
     <div class="logo">
-        <h1>Taffs Electrical & Appliance Repair Guide</h1>
+        <h1>Fiji Electrical & Appliance Repair Guide</h1>
     </div>
 
-    <button id="menuButton" aria-label="Open Navigation Menu">
+    <button
+        id="menuButton"
+        aria-label="Open navigation menu">
         ☰
     </button>
 
     <nav id="navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="troubleshooting.html">Troubleshooting</a>
-        <a href="safety.html">Safety</a>
-        <a href="contactform.html">Contact</a>
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="troubleshooting.html">
+            Troubleshooting
+        </a>
+
+        <a href="safety.html">
+            Safety
+        </a>
+
+        <a href="contactform.html">
+            Contact
+        </a>
+
     </nav>
 
 </header>
 
 <main>
 
-<section class="hero">
+    <section class="hero">
 
-    <img
-        src="images/hero.jpg"
-        alt="Electrical maintenance worker"
-        loading="lazy"
-        width="800"
-        height="450">
+        <img
+            src="images/hero.webp"
+            alt="Electrical technician performing maintenance"
+            loading="lazy"
+            width="1200"
+            height="675">
 
-    <div class="hero-text">
-        <h2>Electrical Solutions Made Simple</h2>
+        <div class="hero-text">
 
-        <p>
-            Learn how to identify common electrical and appliance
-            problems safely before calling a technician.
-        </p>
-    </div>
+            <h2>Electrical Solutions Made Simple</h2>
 
-</section>
+            <p>
+                Learn how to safely identify common electrical and
+                appliance problems before calling a technician.
+            </p>
 
-<section class="welcome">
+        </div>
 
-    <h2>Welcome</h2>
+    </section>
 
-    <p>
-        This website provides practical troubleshooting
-        information for electrical systems and household
-        appliances commonly found throughout Fiji.
-    </p>
+    <section class="welcome">
 
-    <p id="visitCounter"></p>
-
-</section>
-
-<section class="features">
-
-    <article class="card">
-        <h3>Outlet Problems</h3>
+        <h2>Welcome</h2>
 
         <p>
-            Learn why power outlets stop working and what to
-            check safely.
+            The Fiji Electrical & Appliance Repair Guide provides
+            practical troubleshooting information and safety
+            recommendations for electrical systems and household
+            appliances commonly used throughout Fiji.
         </p>
-    </article>
 
-    <article class="card">
-        <h3>Air Conditioners</h3>
+        <p id="visitCounter"></p>
+
+    </section>
+
+    <section class="features">
+
+        <article class="card">
+
+            <h3>Power Outlet Problems</h3>
+
+            <p>
+                Learn why outlets stop working and what checks can
+                safely be performed.
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>Air Conditioner Faults</h3>
+
+            <p>
+                Discover common portable air conditioner problems and
+                possible causes.
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>Electrical Safety</h3>
+
+            <p>
+                Protect yourself and your family with good electrical
+                safety practices.
+            </p>
+
+        </article>
+
+    </section>
+
+    <dialog id="safetyModal">
+
+        <h2>Electrical Safety Reminder</h2>
 
         <p>
-            Common portable AC faults and troubleshooting tips.
+            Always disconnect power before inspecting electrical
+            equipment or appliances.
         </p>
-    </article>
 
-    <article class="card">
-        <h3>Electrical Safety</h3>
+        <button id="closeModal">
+            Close
+        </button>
 
-        <p>
-            Protect yourself and your family using safe electrical
-            practices.
-        </p>
-    </article>
-
-</section>
-
-<dialog id="safetyModal">
-
-    <h2>Electrical Safety Reminder</h2>
-
-    <p>
-        Always disconnect power before inspecting electrical
-        equipment or appliances.
-    </p>
-
-    <button id="closeModal">
-        Close
-    </button>
-
-</dialog>
+    </dialog>
 
 </main>
 
 <footer>
 
     <p>
-        &copy; <span id="year"></span>
+        &copy;
+        <span id="year"></span>
         Michael Tafunai | WDD231 Final Project
     </p>
 
     <p id="lastModified"></p>
 
     <p>
-        <a href="attributions.html">Attributions</a> |
-        <a href="#">Project Video</a>
+
+        <a href="attributions.html">
+            Attributions
+        </a>
+
+        |
+
+        <a href="https://youtube.com/">
+            Project Video
+        </a>
+
     </p>
 
 </footer>
@@ -146,3 +200,4 @@
 
 </body>
 </html>
+```
